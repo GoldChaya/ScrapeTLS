@@ -22,6 +22,7 @@ const App = () => {
                         <tr>
                             <th>Image</th>
                             <th>Title</th>
+                            <th>More</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +36,7 @@ const App = () => {
                                         <button class="btn btn-outline-primary" type="button" disabled>{item.comments} comments</button>
                                     </div>
                                 </td>
+                                <td>{item.text}</td>
                             </tr>
                         })}
                     </tbody>

@@ -55,7 +55,11 @@ namespace Homework_June_7.Data
                     item.Url = url.Attributes["href"].Value;
                 }
                 var text = div.QuerySelector(".td-excerpt");
-                if (text != null)
+                if (text != null && text.TextContent != ""&& text.TextContent!="   ")
+                {
+                    item.Text = text.TextContent;
+                }
+                else
                 {
                     item.Text = titleElement.TextContent;
                 }
